@@ -16,20 +16,20 @@
 
 /* element selector */
 body {
-    display: sticky;
+    display: block;
     background-color: #2196F3;
     position:relative;
     border: solid wheat;
     border-style:double;
     border-width:5ch;
-    margin: 1px, 1cm, 1pt, 1em;
+    margin: 1px 1cm 1pt 1em;
     color:hsl(16, 84%, 57%)
 }
 
 /* attribute selector */
 ol[type="a"] {
     background: lime;
-    padding: 1px, 1cm, 1pt, 1em;
+    padding: 1px 1cm 1pt 1em;
 }
 
 ul {
@@ -38,21 +38,21 @@ ul {
     padding-right: 1cm;
     padding-bottom: 1pt;
     padding-left: 1cm;
-    margin-top: vh;
-    margin-right: vw;
-    margin-bottom: vh;
-    margin-left: vw;
+    margin-top: 3ch;
+    margin-right: 3rem;
+    margin-bottom: 3ch;
+    margin-left: 3rem;
 }
 
 header {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 500px;
+    column-gap: 50px;
 }
 
 /* pseudo class selector */
 button:hover {
-    color: color(display-p3 0.653 0.214 0.331);
+    color: color(display-p3 0 1 0);
 }
 
 a:active {
@@ -105,13 +105,13 @@ h2 + ul {
 
 /* combining two selectors */
 h6.warning {
-    color:black black;
+    color:black;
 }
 
 /* new selector */
 h2:has(+ p) {
     max-width: fit-content;
-    min-width: none;
+    min-width: 1px;
 }
 
 /* nested selector */

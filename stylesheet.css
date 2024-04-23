@@ -1,0 +1,143 @@
+/* css file */
+
+* {background-color: rgb(229, 204, 255);}
+* {text-align: left; text-decoration:underline;}
+
+/* class selector */
+.videodimension {
+    width: 5cm;
+    height: 5cm;
+}
+
+/* id selector */
+#attendance {
+    color: #CCCCFF
+}
+
+/* element selector */
+body {
+    display: sticky;
+    background-color: #2196F3;
+    position:relative;
+    border: solid wheat;
+    border-style:double;
+    border-width:5ch;
+    margin: 1px, 1cm, 1pt, 1em;
+    color:hsl(16, 84%, 57%)
+}
+
+/* attribute selector */
+ol[type="a"] {
+    background: lime;
+    padding: 1px, 1cm, 1pt, 1em;
+}
+
+ul {
+    display: flex;
+    padding-top: 1px;
+    padding-right: 1cm;
+    padding-bottom: 1pt;
+    padding-left: 1cm;
+    margin-top: vh;
+    margin-right: vw;
+    margin-bottom: vh;
+    margin-left: vw;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 500px;
+}
+
+/* pseudo class selector */
+button:hover {
+    color: color(display-p3 0.653 0.214 0.331);
+}
+
+a:active {
+    background-color: red;
+}
+
+/* selector list */
+header, div {
+    color: pink; /* color fallback */
+    color: color-mix(in lch, plum, pink);
+}
+
+/* descendant combinator */
+footer h4 {
+    color:rgb(84, 52, 13)
+}
+
+/* child combinator */
+fieldset > label {
+    background-color: blanchedalmond;
+}
+
+.jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* general sibling combinator */
+h2 ~ p {
+    color: azure;
+    font-family: "jersey-25-regular", sans-serif;
+}
+
+/* adjacent sibling combinator */
+h2 + ul {
+    /*do some boarder*/
+    display: inline;
+    position:relative;
+    border: solid wheat;
+    border-style:solid;
+    border-width:.5ch;
+    border-radius: 5%;
+    border-color: aquamarine;
+    margin: auto;
+        &:hover {
+            color: red;
+        }
+}
+
+/* combining two selectors */
+h6.warning {
+    color:black black;
+}
+
+/* new selector */
+h2:has(+ p) {
+    max-width: fit-content;
+    min-width: none;
+}
+
+/* nested selector */
+
+/* small screens*/
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+/* medium screens*/
+@media (min-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
